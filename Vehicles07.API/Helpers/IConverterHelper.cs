@@ -9,6 +9,6 @@ namespace Vehicles07.API.Helpers
     {
         Task<User> ToUserAsync(UserViewModel model, Guid imageId, bool isNew);
 
-        UserViewModel userViewModel(User user);
+        UserViewModel ToUserViewModel(User user);
     }
 }

@@ -35,7 +35,7 @@ namespace Vehicles07.API.Helpers
             };
         }
 
-        public UserViewModel userViewModel(User user)
+        public UserViewModel ToUserViewModel(User user)
         {
             return new UserViewModel
             {
@@ -46,6 +46,7 @@ namespace Vehicles07.API.Helpers
                 Email = user.Email,
                 FirstName = user.FirstName,
                 Id = user.Id,
+                ImageId = user.ImageId,
                 LastName = user.LastName,
                 PhoneNumber = user.PhoneNumber,
                 UserType = user.UserType,
